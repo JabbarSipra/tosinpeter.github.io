@@ -1,0 +1,367 @@
+/* google fonts import link */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+     font-family: 'Outfit', sans-serif;
+     color: #000;
+     scroll-behavior: smooth;
+}
+::selection{
+     color: #fff;
+     background: #000;
+}
+:root{
+     --white-color:#fff;
+     --black-color:#000;
+     --yellow-color:#f6ff00;
+}
+.heading{
+     font-size: 1.5rem;
+     font-weight: 800;
+     text-transform: uppercase;
+}
+/* navbar code starts from here */
+.navbar{
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background: var(--black-color);
+     color: var(--white-color);
+     padding: .5rem 4rem;
+     position: fixed;
+     border-bottom: 2px solid var(--yellow-color);
+}
+.navbar .left img{
+     width: 10rem;
+}
+.navbar .right .nav-links a{
+     color: var(--white-color);
+     text-transform: uppercase;
+     font-weight: 500;
+     padding: 0 .5rem;
+     transition: .5s ease-in-out !important;
+}
+.navbar .right .nav-links a:hover{
+     color: var(--yellow-color);
+}
+.navbar .right .nav-links a i{
+     color: var(--white-color);
+     transition: .5s ease-in-out;
+}
+.navbar .right .nav-links a i:hover{
+     color: var(--yellow-color);
+}
+.navbar .right .drop-down{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     position: absolute;
+     z-index: 2343423423;
+     background: var(--black-color);
+     padding: 1rem;
+     border: 2px solid var(--yellow-color);
+     margin-top: 2rem;
+     right: 13%;
+     border-bottom-left-radius: 10px;
+     border-bottom-right-radius: 10px;
+     display: none;
+     opacity: 0;
+     transition: .5s ease-in-out;
+}
+
+.navbar .right .drop-down a{
+     color: var(--white-color);
+     padding: .3rem 0;
+     text-transform: uppercase;
+     font-weight: 500;
+     transition: .5s ease-in-out;
+}
+.navbar .right .drop-down a:hover{
+     color: var(--yellow-color);
+}
+.drop-down.active{
+     display: flex !important;
+     opacity: 1 !important;
+}
+.menu i{
+     color: var(--white-color);
+     font-size: 1.2rem;
+     display: none;
+}
+/* navbar code ends here */
+
+/* header section starts from here */
+.header{
+     width: 100%;
+     height: 100vh;
+     background-image: url(images/header.webp);
+     background-repeat: no-repeat;
+     background-position: center top;
+     background-size: cover;
+     background-attachment: fixed;
+}
+
+/* header section ends here */
+
+
+/* welcome section starts from here*/
+.welcome{
+     padding: 3rem 6rem;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 10rem;
+}
+.welcome h1{
+     margin-bottom: 2rem;
+}
+.welcome-detail{
+     font-size: 1.1rem;
+     line-height: 2rem;
+     font-weight: 500;
+}
+.welcome .right{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: .7rem;
+}
+.welcome .right img{
+     width: 100%;
+}
+/* welcome section ends here */
+
+
+/* buy section starts from here */
+.buy{
+     padding: 3rem 6rem;
+}
+.buy .left-right{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 6rem;
+     margin-bottom: 3rem;
+}
+.buy .left-right .left h1{
+     font-size: 1.5rem;
+     color: palevioletred;
+     margin-bottom: .2rem;
+}
+.buy .left-right .left h2{
+     font-size: 1.1rem;
+     font-weight: 400;
+     font-style: italic;
+     margin-bottom: 1rem;
+}
+.buy .left-right .left p{
+     font-size: 1.1rem;
+     font-weight: 500;
+}
+.buy .left-right .right p{
+     font-style: italic;
+     font-style: 1.1rem;
+}
+.buy-banner{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 3rem 2rem;
+     background:var(--yellow-color);
+     border-radius: 10px;
+}
+.buy-banner h1{
+     font-style: 1.1rem;
+     font-style: italic;
+}
+.buy-banner p{
+     font-style: 1.1rem;
+     font-weight: 500;
+}
+.buy-banner a{
+     background: #000;
+     padding: 1.5rem 1rem;
+     border-radius: 10px;
+     color: var(--white-color);
+     font-weight: 600;
+     transition: .5s ease-in-out;
+}
+.buy-banner a:hover{
+     color: var(--black-color);
+     background: var(--white-color);
+}
+/* buy section ends here */
+
+/* specs section starts from here  */
+.specs{
+     padding: 3rem 6rem;
+     background: rgb(240, 240, 240);
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 3rem;
+}
+.specs .left h1{
+     margin-bottom: 1rem;
+}
+.specs .left p{
+     font-size: 1.1rem;
+     font-family: 500;
+     margin-bottom: 1rem;
+}
+.specs .left p a{
+     color: var(--yellow-color);
+     transition: .5s ease-in-out;
+}
+.specs .left p a:hover{
+     color: black;
+}
+.specs .right img{
+     width: 100%;
+}
+/* specs section ends here */
+
+/* welcome2 section starts from here */
+.welcome2{
+     padding: 3rem 6rem;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 4rem;
+}
+.welcome2 .left h1{
+     margin-bottom: 2rem;
+}
+.welcome2 .left p{
+     font-size: 1.1rem;
+     font-weight: 500;
+     padding-bottom: 1rem;
+}
+/* welcome2 section ends here */
+
+/* roadmap section starts from here */
+.roadmap{
+     padding: 3rem 6rem;
+}
+.roadmap p{
+     font-size: 1.1rem;
+     font-weight: 500;
+}
+.roadmap h1{
+     padding-bottom: 2rem;
+}
+.roadmap .roadmap-dta{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 2rem;
+     margin-top: 2rem;
+     list-style-type: square;
+}
+.roadmap .roadmap-dta li{
+     font-size: 1.1rem;
+     font-weight: 500;
+     padding: .2rem 0;
+}
+.roadmap-dta .right img{
+     width: 70%;
+}
+/* roadmap section ends here */
+
+/* THe team section starts from here */
+.team{
+     padding: 3rem 6rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 4rem;
+     background-color: rgb(236, 236, 236);
+}
+.team .left h1{
+     margin-bottom: 2rem;
+}
+.team .left p{
+     font-size: 1.1rem;
+     font-weight: 500;
+     padding: .5rem 0 ;
+}
+.team .right{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 1rem;
+}
+.team .right img{
+     width: 100%;
+}
+/* THe team section ends here */
+
+
+/* footer section starts from here */
+.footer{
+     padding: 3rem 6rem;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     justify-content: space-between;
+     align-items: center;
+     background: var(--black-color);
+     color: var(--white-color);
+}
+.footer .left h1{
+     margin-bottom: 1rem;
+     color: var(--white-color);
+     font-size: 1.1rem;
+}
+.footer .left .mail{
+     color: var(--white-color);
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     border: 2px solid var(--white-color);
+     border-radius: 10px;
+}
+.mail p{
+     color: var(--black-color);
+     font-size: 1.4rem;
+     background: var(--white-color);
+     padding: .4rem;
+     border-top-right-radius: 7px;
+     border-bottom-right-radius: 7px;
+     cursor: pointer;
+}
+.footer .left .mail input{
+     border: none;
+     outline: none;
+     padding: .5rem 1rem;
+     background: transparent;
+     color: var(--white-color);
+}
+.footer .mid img{
+     width: 70%;
+     display: flex;
+     margin: auto;
+}
+.footer .right{
+     width: 100%;
+     text-align: center;
+}
+.footer .right .footer-links i{
+     color: var(--white-color);
+     padding: 0 .5rem;
+     font-size: 1.3rem;
+     cursor: pointer;
+     transition: .5s ease-in-out;
+}
+.footer .right .footer-links i:hover{
+     color: var(--yellow-color);
+}
+.footer .right p{
+     color: var(--white-color);
+     font-size: .7rem;
+     margin-top: 1.5rem;
+}
+/* footer section ends here */

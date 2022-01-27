@@ -1,0 +1,121 @@
+:root{
+     --white-color:#fff;
+     --black-color:#000;
+     --yellow-color:#bfc500;
+}
+
+
+@media only screen and (max-width:1030px){
+     .navbar{
+          padding: .5rem 2rem;
+     }
+}
+
+@media only screen and (max-width:990px){
+     .menu i{
+          display: unset;
+          font-size: 1.4rem;
+     }
+     .fa-bars{
+          transition: 5s ease-in-out;
+          transform: rotate(360deg);
+     }
+     .navbar .nav-right{
+          position: absolute;
+          right: 0;
+          top: 100%;
+          background: var(--black-color);
+          padding: 2rem;
+          display: none;
+     }
+     .nav-right.active{
+          display: unset;
+     }
+     .nav-links{
+          display: flex;
+          flex-direction: column;
+     }
+     .navbar .right .nav-links a{
+          padding: .5rem 1rem;
+          font-size: 1.2rem;
+     }
+     .members{
+          display: none;
+     }
+     .drop-down.active{
+          display: none !important;
+     }
+     .nav-icon{
+          display: none;
+     }
+     .welcome{
+          flex-direction: column;
+          gap: 1rem;
+     }
+     .buy{
+          padding: 3rem;
+     }
+     .buy .left-right{
+          gap: 1rem;
+     }
+     .buy-banner{
+          flex-direction: column;
+          gap: 2rem;
+     }
+     .specs{
+          flex-direction: column;
+     }
+     .welcome2{
+          flex-direction: column;
+     }
+     .roadmap-dta{
+          flex-direction: column;
+     }
+     .roadmap-dta .right img{
+          text-align: center;
+          display: flex;
+          margin: auto;
+     }
+     .team{
+          flex-direction: column;
+     }
+     .footer{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 3rem;
+     }
+}
+
+
+@media only screen and (max-width:600px){
+     .welcome{
+          padding: 3rem 2rem;
+     }
+     .buy .left-right{
+          flex-direction: column;
+     }
+     .buy{
+          padding: 3rem 2rem;
+     }
+     .specs{
+          padding: 3rem 2rem;
+     }
+     .welcome2{
+          padding: 3rem 2rem;
+     }
+     .welcome2 .right img{
+          width: 100%;
+     }
+     .roadmap{
+          padding: 3rem 2rem;
+     }
+     .team{
+          padding: 3rem 2rem;
+     }
+     .footer{
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 3rem;
+          padding: 3rem 2rem;
+     }
+}
